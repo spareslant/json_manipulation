@@ -751,41 +751,41 @@ class TestListReconstruction(unittest.TestCase):
 
   def test_ExistingList_appendNestedList_overSizing_root_and_nestedStructure(self):
     expectedOutput = [
-											"yahoo",
-											"hotmail",
-											{
-												"person": {
-													"name": "rob",
-													"job": "computer",
-													"hobbies": [
-														"cycle",
-														"excersize"
-													]
-												}
-											},
-											[
-												"microsoft",
-												"amazon"
-											],
-											None,
-											None,
-											[
-												None,
-												None,
-												None,
-												None,
-												None,
-												{
-													"google": [
-														None,
-														None,
-														{
-															"uff": "anotherTest"
-														}
-													]
-												}
-											]
-										]
+                      "yahoo",
+                      "hotmail",
+                      {
+                        "person": {
+                          "name": "rob",
+                          "job": "computer",
+                          "hobbies": [
+                            "cycle",
+                            "excersize"
+                          ]
+                        }
+                      },
+                      [
+                        "microsoft",
+                        "amazon"
+                      ],
+                      None,
+                      None,
+                      [
+                        None,
+                        None,
+                        None,
+                        None,
+                        None,
+                        {
+                          "google": [
+                            None,
+                            None,
+                            {
+                              "uff": "anotherTest"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
 
     input = addPathToPopulatedDict(testDict2,
               ["6", "5", "google", "2", "uff"], "anotherTest")
